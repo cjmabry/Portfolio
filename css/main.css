@@ -1,0 +1,328 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #333;
+}
+
+h1 {
+	font-size: 1.25em; /* 20 */
+}
+
+h2 {
+	font-size: 1.125em; /* 18 */
+}
+
+h3 {
+	font-size: 1em; /* 16 */
+}
+
+p {
+	font-size: 0.875em; /* 14 */
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	border-bottom: 2px solid #333;
+	-webkit-transition: 0.25s;
+	        transition: 0.25s;
+}
+
+a:hover {
+	color: #e14a43;
+	border-bottom: 5px solid #e14a43;
+}
+
+.wrap {
+	max-width: 1080px;
+	margin: auto;
+	padding:20px;
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vertically-center {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+section {
+	padding: 50px 0;
+}
+
+nav {
+	height: 80px;
+	line-height: 80px;
+}
+
+nav a {
+	color: #333;
+	border-bottom: 5px solid #333;
+	font-weight: lighter;
+}
+
+nav a:hover {
+	color: #e14a43;
+	border-bottom: 10px solid #e14a43;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+#cta a {
+	color: white;
+	font-weight: bolder;
+	border: 0;
+}
+
+#cta a:hover {
+	border-bottom: 3px solid white;
+}
+
+#cta {
+	font-weight: lighter;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align:center;
+	color: white;
+	background: #e14a43;
+}
+
+#about {
+	height: 300px;
+}
+
+#about h1 {
+	padding:0;
+	margin: 0; 
+}
+
+#about h3 {
+	padding-top:0;
+	margin-top: 0; 
+	font-weight: lighter;
+}
+
+#headshot {
+	width: 30%;
+	float: left;
+	height:100%;
+}
+
+#headshot img {
+	display: block;
+	margin:auto;
+	height: 200px;
+	width: auto;
+}
+
+#bio {
+	width: 500px;
+	float: left;
+}
+
+#portfolio {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+.portfolio-piece {
+	width:23%;
+	float: left;
+	margin: 2% 0 0 2%;
+	background: #fafafa;
+}
+
+.portfolio-piece .photo {
+	width: 100%;
+	height:200px;
+	cursor: pointer;
+	-webkit-transition:0.25s;
+	        transition:0.25s;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.portfolio-piece .photo:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.portfolio-piece .content {
+	padding: 5% 5% 50px 5%;
+	height:300px;
+	position: relative;
+}
+
+.portfolio-piece .content h2 {
+	padding:0; 
+	margin:0;
+}
+
+.portfolio-piece .content .category {
+	font-size: 70%;
+	background: rgba(0,0,0,0.1);
+	padding:2px 5px;
+	border-radius: 3px;
+	color:#555;
+	white-space: nowrap;
+}
+
+.portfolio-piece .button {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #e14a43;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	color: white;
+	border: 0;
+	-webkit-transition: 0.25s;
+	        transition: 0.25s;
+}
+
+.portfolio-piece .button:hover {
+	background: #BE3933;
+}
+
+#config .photo {
+	background: url('../images/config.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#config .photo:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#teaser-site .photo{
+	background:  url('../images/teaser.png') center center no-repeat;
+	background-size: cover;
+}
+
+#kickstarter-campaign .photo{
+	background:  url('../images/kickstarter.png') center center no-repeat;
+	background-size: cover;
+}
+
+#ads .photo{
+	background:  url('../images/ad_2.png') center center no-repeat;
+	background-size: cover;
+}
+
+#instagram .photo{
+	background:  url('../images/instagram.png') center center no-repeat;
+	background-size: cover;
+}
+
+#poster .photo{
+	background:  url('../images/chad.png') center center no-repeat;
+	background-size: cover;
+}
+
+#parsonal-animation .photo{
+	background:  url('../images/parsonal_animation.png') center center no-repeat;
+	background-size: cover;
+}
+
+#kickstarter-animation .photo{
+	background:  url('../images/kickstarter_animation.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#editionless .photo{
+	background:  url('../images/editionless.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#ryff .photo{
+	background:  url('../images/ryff.png') center top no-repeat;
+	background-size: cover;
+}
+
+footer {
+	text-align: center;
+	padding: 50px 0;
+}
+
+@media screen and (max-width: 1080px) {
+	.portfolio-piece {
+		width:31%;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.portfolio-piece {
+		width: 47%;
+	}
+
+	.portfolio-piece .content {
+		height: 250px;
+	}
+
+	#bio {
+		width: 60%;
+		float: right;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.portfolio-piece {
+		width: 96%;
+		margin: 5% 0;
+	}
+
+	.portfolio-piece .content {
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 620px) {
+	#headshot {
+		display: none;
+	}
+
+	#cta {
+		height: auto;
+	}
+
+	#bio {
+		width: 100%;
+	}
+
+	nav ul li{
+		padding: 0 10px;
+	}
+
+}
