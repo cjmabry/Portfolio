@@ -6,6 +6,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -29,53 +30,108 @@
 	<meta property="og:url" content="http://www.chrismabrydesign.com" />
 	<meta property="og:image" content="http://www.chrismabrydesign.com/images/facebook_cover.png" />
 	<meta property="og:description" content="I'm a designer and developer with a love for user experience and learning new things, living and working in Nashville, Tennessee." />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
 
 </head>
 <body>
 
-	<div id="cta">I'm currently looking for a job. Let's talk: <a href="mailto:me@chrismabrydesign.com">me@chrismabrydesign.com</a></div>
+	<div class="cta">I'm currently looking for a job. Let's talk: <a href="mailto:me@chrismabrydesign.com">me@chrismabrydesign.com <span class="fa fa-angle-right"></span></a></div>
 
 	<nav class="wrap clear">
 		<ul>
-			<li><a data-scroll href="#about" title="About Me">About Me</a></li>
-			<li><a data-scroll href="#work" title="My Recent Work">My Recent Work</a></li>
-			<!-- <li><a data-scroll href="" title="My Resume">My Resume</a></li> -->
+			<li><a data-scroll href="#about" title="About Me">Me</a></li>
+			<li><a data-scroll href="#work" title="My Recent Work">Work</a></li>
+			<!-- <li><a data-scroll href="#resume" title="My Resume">Resume</a></li> -->
 		</ul>
 	</nav>
 
-	<section id="about" class="wrap clear">
+	<section id="about" class="wrap clear about">
 
-		<div id="headshot">
+		<div class="headshot">
 
 			<img src="images/photo.jpg" class="vertically-center">
 
 		</div>
 
-		<div id="bio" class="vertically-center">
+		<div class="bio vertically-center">
 
 			<h1>Chris Mabry</h1>
-			<h3>Co-founder and CTO at <a href="http://angel.co/arrister">Arrister</a></h3>
+			<h3>Designer + Developer</h3>
 
-			<p>I'm a designer and developer with a love for user experience and learning new things, living and working in Nashville, Tennessee.</p>
+			<p>I'm a product designer and front-end developer with full-stack experience.</p>
 
-			<a href="#">
-				<span id="linkedin"></span>
-			</a>
+			<p>I build internet things for fame and money (mostly fame), and am looking for a full-time position as a front-end developer, product designer, or any other fun title your company uses that has to do with the design or building of websites.</p>
 
-			<a href="#">
-				</span id="github"></span>
-			</a>
+			<a href="mailto:me@chrismabrydesign.com" target="blank">me@chrismabrydesign.com</a>
 
-			<a href="#">
-				</span id="codepen"></span>
-			</a>
+			<div class="social">
+				<a href="https://www.linkedin.com/in/cmabry" title="LinkedIn" target="blank">
+					<span id="linkedin" class="fa fa-linkedin"></span>
+				</a>
 
-			<a href="#">
-				</span id="twitter"></span>
-			</a>
+				<a href="https://github.com/cjmabry" title="GitHub" target="blank">
+					<span id="github" class="fa fa-github-square"></span>
+				</a>
 
-			<a href="mailto:me@chrismabrydesign.com">me@chrismabrydesign.com</a>
+				<a href="https://medium.com/@chrismabry" title="Medium" target="blank">
+					<span id="medium" class="fa fa-medium"></span>
+				</a>
+
+				<a href="https://www.twitter.com/cjmab28" title="Twitter" target="blank">
+					<span id="twitter" class="fa fa-twitter"></span>
+				</a>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section>
+
+		<div class="skills">
+
+			<div class="skill">
+				<h4>Skills</h4>
+				<ul>
+					<li>Product Design</li>
+					<li>Front-End Development</li>
+					<li>User Experience</li>
+					<li>2D & 3D Animation</li>
+					<li>Social Media Strategy & Marketing</li>
+				</ul>
+			</div>
+
+			<div class="skill">
+				<h4>Languages & Frameworks</h4>
+				<ul>
+					<li>HTML 5</li>
+					<li>CSS 3</li>
+					<li>Javascript, jQuery, three.js</li>
+					<li>Python, Flask</li>
+				</ul>
+			</div>
+
+			<div class="skill">
+				<h4>Tools</h4>
+				<ul>
+					<li>Atom (previously Sublime Text)</li>
+					<li>Git, Grunt, and Terminal</li>
+					<li>Illustrator, Photoshop, and After Effects</li>
+					<li>Blender</li>
+					<li>Logic Pro X</li>
+				</ul>
+			</div>
+
+			<div class="skill">
+				<h4>Hobbies</h4>
+				<ul>
+					<li>Making <a href="https://soundcloud.com/cjmabry" target="blank">Music</a></li>
+					<li>Pixel Art & Gig Posters</li>
+					<li>Cheering on <a href="http://www.titansonline.com" target="blank">terrible football teams</a></li>
+					<li>Arguing on Facebook</li>
+					<li><a href="https://medium.com/@chrismabry" target="blank">Writing</a></li>
+				</ul>
+			</div>
 
 		</div>
 
@@ -85,7 +141,62 @@
 
 		<h1>My Work</h1>
 
-		<ul id="portfolio" class="clear">
+		<ul class="portfolio" class="clear">
+
+			<li class="portfolio-piece" id="bernie">
+
+				<a class="image-link" href="images/bernie_full.png">
+					<div class="photo"></div>
+				</a>
+
+				<div class="content">
+
+					<h2>Connect with Bernie</h2>
+					<span class="category">Design</span> <span class="category">Development</span>
+
+					<p>I had the privilege to work with some talented folks on the Bernie Sanders Digital Team to build a platform for engaging and organizing one of the largest grassroots movements in political history.</p>
+
+					<a class="button" href="http://connect.berniesanders.com" target="blank">Visit</a>
+
+				</div>
+
+			<li class="portfolio-piece" id="reddimatch">
+
+				<a class="image-link" href="images/reddimatch_full.png">
+					<div class="photo"></div>
+				</a>
+
+				<div class="content">
+
+					<h2>Reddimatch</h2>
+					<span class="category">Design</span> <span class="category">Development</span> <span class="category">Branding</span>
+
+					<p>Reddimatch is a full-stack web app that allows redditors to match and chat with other like-minded individuals using an algorithm that compares users' profiles.</p>
+
+					<p>I designed a unique match-making system in Python, complete with full responsive instant messaging using Socket.io.</p>
+
+					<a class="button" href="http://www.reddimatch.com" target="blank">Try the beta</a>
+
+				</div>
+
+				<!-- <li class="portfolio-piece" id="hacker-coffee">
+
+					<a class="image-link" href="images/config_full.jpg">
+						<div class="photo"></div>
+					</a>
+
+					<div class="content">
+
+						<h2>Hacker Coffee</h2>
+						<span class="category">Design</span> <span class="category">Development</span> <span class="category">Branding</span>
+
+						<p>I was hired to take Hacker Coffee, an idea for a coffee subscription service aimed at developers, and turn it into a functional product.</p>
+
+						<p>I designed logo and branding, wrote some copy, and built a landing page, complete with Stripe integration for ordering.</p>
+
+						<a class="button" href="http://www.hackercoffee.com" target="blank">Visit</a>
+
+					</div> -->
 
 			<li class="portfolio-piece" id="config">
 
@@ -104,8 +215,6 @@
 
 				</div>
 
-			</li>
-
 			<li class="portfolio-piece" id="teaser-site">
 
 				<a href="http://www.arrister.com/teaser" target="blank"><div class="photo"></div></a>
@@ -120,8 +229,6 @@
 					<a class="button" href="http://www.arrister.com/teaser" target="blank">Visit</a>
 
 				</div>
-
-			</li>
 
 			<li class="portfolio-piece" id="parsonal-animation">
 
@@ -138,8 +245,6 @@
 
 				</div>
 
-			</li>
-
 			<li class="portfolio-piece" id="kickstarter-campaign">
 
 				<a href="https://www.kickstarter.com/projects/769077584/parsonal-custom-furniture-on-demand" target="blank"><div class="photo"></div></a>
@@ -154,8 +259,6 @@
 					<a class="button" href="https://www.kickstarter.com/projects/769077584/parsonal-custom-furniture-on-demand" target="blank">Visit</a>
 
 				</div>
-
-			</li>
 
 			<li class="portfolio-piece" id="kickstarter-animation">
 
@@ -172,8 +275,6 @@
 
 				</div>
 
-			</li>
-
 			<li class="portfolio-piece" id="ads">
 
 				<a href="images/ad_2.png" class="image-link"><div class="photo"></div></a>
@@ -186,8 +287,6 @@
 					<p>Ads created for the Nashville Scene in order to drive traffic to our Kickstarter campaign.</p>
 
 				</div>
-
-			</li>
 
 			<li class="portfolio-piece" id="instagram">
 
@@ -202,8 +301,6 @@
 
 				</div>
 
-			</li>
-
 			<li class="portfolio-piece" id="poster">
 
 				<a href="images/chad.png" class="image-link"><div class="photo"></div></a>
@@ -216,8 +313,6 @@
 					<p>Designed as a favor for a friend's band and inspired by a hometown landmark, this was my first foray into poster design.</p>
 
 				</div>
-
-			</li>
 
 			<li class="portfolio-piece" id="editionless">
 
@@ -234,9 +329,7 @@
 
 				</div>
 
-			</li>
-
-			<li class="portfolio-piece" id="ryff">
+			<!-- <li class="portfolio-piece" id="ryff">
 
 				<div class="photo"></div>
 
@@ -247,13 +340,21 @@
 
 					<p>Ryff is the audio app that gets out of your way.</p>
 
-				</div>
-
-			</li>
+				</div> -->
 
 		</ul>
 
 	</section>
+
+	<!-- <section class="color-block resume">
+
+		<div class="wrap">
+			<h1>My Resumé</h1>
+
+			<p>If old-fashioned resumés are more your thing, I have one of those to.</p>
+		</div>
+
+	</section> -->
 
 	<footer><small>Copyright &copy; 2016 Chris Mabry</small></footer>
 

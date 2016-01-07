@@ -7,6 +7,7 @@ body {
 	padding: 0;
 	margin: 0;
 	color: #333;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -23,15 +24,15 @@ h3 {
 
 p {
 	font-size: 0.875em; /* 14 */
-	font-weight: lighter;
+	font-weight: normal;
 }
 
 a {
 	text-decoration: none;
 	color: #333;
 	border-bottom: 2px solid #333;
-	-webkit-transition: 0.25s;
-	        transition: 0.25s;
+	-webkit-transition: 0.1s;
+	        transition: 0.1s;
 }
 
 a:hover {
@@ -64,14 +65,15 @@ section {
 }
 
 nav {
-	height: 80px;
-	line-height: 80px;
+	height: 60px;
+	line-height: 60px;
+	/*padding: 0 0 0 20px;*/
 }
 
 nav a {
 	color: #333;
-	border-bottom: 5px solid #333;
-	font-weight: lighter;
+	border-bottom: 3px solid #333;
+	padding-bottom: 2px;
 }
 
 nav a:hover {
@@ -87,21 +89,11 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	padding: 0 20px;
+	padding-right: 20px;
 }
 
-#cta a {
-	color: white;
-	font-weight: bolder;
-	border: 0;
-}
-
-#cta a:hover {
-	border-bottom: 3px solid white;
-}
-
-#cta {
-	font-weight: lighter;
+.cta {
+	font-weight: normal;
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -110,40 +102,90 @@ nav ul li {
 	background: #e14a43;
 }
 
-#about {
+.cta .fa {
+	font-weight: bold;
+}
+
+.cta a {
+	color: white;
+	font-weight: bolder;
+	border: 0;
+	border-bottom: 1px solid white;
+	padding-bottom: 2px;
+}
+
+.cta a:hover {
+	border-bottom: 5px solid white;
+}
+
+.about {
 	height: 300px;
 }
 
-#about h1 {
+.about h1 {
 	padding:0;
-	margin: 0; 
+	margin: 0;
 }
 
-#about h3 {
+.about h3 {
 	padding-top:0;
-	margin-top: 0; 
+	margin-top: 0;
 	font-weight: lighter;
 }
 
-#headshot {
+.headshot {
 	width: 30%;
 	float: left;
 	height:100%;
 }
 
-#headshot img {
+.headshot img {
 	display: block;
 	margin:auto;
-	height: 200px;
+	height: 230px;
 	width: auto;
 }
 
-#bio {
-	width: 500px;
+.bio {
+	width: 70%;
 	float: left;
 }
 
-#portfolio {
+.bio .social {
+	padding-top: 20px;
+}
+
+.bio .social a {
+	text-decoration: none;
+	border: none;
+	padding-right: 5px;
+}
+
+.skills {
+	width: 700px;
+	margin: auto;
+	background: #fafafa;
+	padding: 0 25px 25px 25px;
+	border-radius: 5px;
+}
+
+.skills h4 {
+	margin-bottom: 10px;
+}
+
+.skill ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.skill {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.portfolio {
 	list-style-type: none;
 	padding: 0;
 	margin: 0 auto;
@@ -152,9 +194,10 @@ nav ul li {
 
 .portfolio-piece {
 	width:23%;
-	float: left;
+	display: inline-block;
 	margin: 2% 0 0 2%;
 	background: #fafafa;
+	vertical-align: top;
 }
 
 .portfolio-piece .photo {
@@ -179,7 +222,7 @@ nav ul li {
 }
 
 .portfolio-piece .content h2 {
-	padding:0; 
+	padding:0;
 	margin:0;
 }
 
@@ -204,12 +247,23 @@ nav ul li {
 	text-align: center;
 	color: white;
 	border: 0;
+	font-weight: bolder;
 	-webkit-transition: 0.25s;
 	        transition: 0.25s;
 }
 
 .portfolio-piece .button:hover {
 	background: #BE3933;
+}
+
+#bernie .photo {
+	background: url('../images/bernie.png') top center no-repeat;
+	background-size: cover;
+}
+
+#reddimatch .photo {
+	background: url('../images/reddimatch.png') center center no-repeat;
+	background-size: cover;
 }
 
 #config .photo {
@@ -270,6 +324,15 @@ nav ul li {
 	background-size: cover;
 }
 
+/*Resume*/
+section.color-block {
+	width: 100%;
+	height: 300px;
+	background: #e14a43;
+	color: white;
+}
+
+
 footer {
 	text-align: center;
 	padding: 50px 0;
@@ -290,9 +353,14 @@ footer {
 		height: 250px;
 	}
 
-	#bio {
+	.bio {
 		width: 60%;
 		float: right;
+	}
+
+	.skills {
+		width: 90%;
+		padding: 5%;
 	}
 }
 
@@ -309,15 +377,15 @@ footer {
 }
 
 @media screen and (max-width: 620px) {
-	#headshot {
+	.headshot {
 		display: none;
 	}
 
-	#cta {
+	.cta {
 		height: auto;
 	}
 
-	#bio {
+	.bio {
 		width: 100%;
 	}
 
