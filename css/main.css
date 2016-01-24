@@ -383,42 +383,42 @@ nav ul li {
 }
 
 .bernie {
-	background: url('/images/bernie_bg.png') center center no-repeat;
+	background: url('../images/bernie_bg.png') center center no-repeat;
 	background-size: 100% auto;
 }
 
 .reddimatch {
-	background: url('/images/reddimatch_bg.png') center center no-repeat;
+	background: url('../images/reddimatch_bg.png') center center no-repeat;
 	background-size: 100% auto;
 }
 
 .editionless {
-	background: url('/images/editionless_bg.png') center center no-repeat;
+	background: url('../images/editionless_bg.png') center center no-repeat;
 	background-size: 100%;
 }
 
 .chad {
-	background: url('/images/chad_bg.png') center center no-repeat;
+	background: url('../images/chad_bg.png') center center no-repeat;
 	background-size: 100%;
 }
 
 .arrister {
-	background: url('/images/arrister_bg.png') center center no-repeat;
+	background: url('../images/arrister_bg.png') center center no-repeat;
 	background-size: 100%;
 }
 
 .parsonal {
-	background: url('/images/parsonal_bg.png') center center no-repeat;
+	background: url('../images/parsonal_bg.png') center center no-repeat;
 	background-size: 100%;
 }
 
 .hacker-coffee {
-	background: url('/images/hacker_coffee_bg.png') center center no-repeat;
+	background: url('../images/hacker_coffee_bg.png') center center no-repeat;
 	background-size: 100%;
 }
 
 .ixs {
-	background: url('/images/ixs_bg.png') center center no-repeat;
+	background: url('../images/ixs_bg.png') center center no-repeat;
 	background-size: 100%;
 }
 
