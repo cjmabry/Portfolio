@@ -537,16 +537,13 @@ section.color-block {
 	padding-bottom: 0;
 }
 
-section.color-block .wrap {
-	padding: 0;
-}
-
 .resume-image {
 	display: block;
 	position: relative;
-	background: white;
+	background: url('../images/resume.png');
+	background-size: cover;
 	height: 300px;
-	width: 600px;
+	width: 80%;
 	margin: 50px auto 0 auto;
 	box-shadow: 0 0 5px 0px rgba(0,0,0,0.4);
 	z-index: 0;
