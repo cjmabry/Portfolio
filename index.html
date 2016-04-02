@@ -35,28 +35,31 @@
 </head>
 <body>
 
-	<div class="cta">If this is still here, I'm looking for a job! Let's <a href="mailto:me@chrismabrydesign.com">talk</a>.</div>
-
 	<nav class="clear">
-		<ul>
-			<li><a data-scroll href="#about" title="About Me">Me</a></li>
-			<li><a data-scroll href="#work" title="My Recent Work">Work</a></li>
-			<li><a data-scroll href="#skills" title="My Skills">Skills</a></li>
-			<li><a data-scroll href="#resume" title="My Resume">Resume</a></li>
-		</ul>
+
+		<div class="wrap topbar">
+			<ul>
+				<li><a data-scroll href="#about" title="About Me">Me</a></li>
+				<li><a data-scroll href="#work" title="My Recent Work">Work</a></li>
+				<li><a data-scroll href="#skills" title="My Skills">Skills</a></li>
+				<li><a data-scroll href="#resume" title="My Resume">Resume</a></li>
+			</ul>
+
+			<div class="cta">If this is still here, I'm looking for a job! Let's <a href="mailto:me@chrismabrydesign.com">talk</a>.</div>
+		</div>
 	</nav>
 
-	<section id="about" class="wrap clear about">
+	<section id="about" class="wrap clear about vertically-center">
 
 		<div class="wrapper">
 
-			<div class="headshot">
+			<div class="headshot vertically-center">
 
 				<img src="images/photo_no_bg.png">
 
 			</div>
 
-			<div class="bio">
+			<div class="bio vertically-center">
 
 				<h1>Chris Mabry</h1>
 				<h3>Designer + Developer</h3>
@@ -397,6 +400,8 @@
 		// 	// percentPosition: true
 		// });
 
+		smoothScroll.init();
+
 		$('.portfolio-piece .close').on('click', function(event){
 
 			event.stopPropagation();
@@ -414,9 +419,9 @@
 
 		});
 
-		$(window).resize(function (){
-			$('.selected').removeClass('selected');
-		});
+		// $(window).resize(function (){
+		// 	$('.selected').removeClass('selected');
+		// });
 
 		(function(i, s, o, g, r, a, m) {
 				i['GoogleAnalyticsObject'] = r;
