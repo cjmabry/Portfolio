@@ -27,6 +27,7 @@ h3 {
 p {
 	font-size: 0.875em; /* 14 */
 	font-weight: normal;
+	text-align: left;
 }
 
 a {
@@ -45,7 +46,7 @@ a:hover {
 .wrap {
 	max-width: 1080px;
 	margin: auto;
-	padding:20px;
+	padding:0 20px;
 }
 
 .clear:after {
@@ -75,7 +76,7 @@ nav {
 	left: 0;
 	right: 0;
 	z-index: 20;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+	/*box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);*/
 }
 
 nav a {
@@ -87,6 +88,7 @@ nav a {
 nav a:hover {
 	color: white;
 	border-bottom: 0;
+	font-weight: bolder;
 }
 
 nav ul {
@@ -133,7 +135,8 @@ nav ul li {
 }
 
 .about {
-	height: 100%;
+	/*height: 100%;*/
+	height: 700px;
 	/*padding: 100px 0 140px;*/
 }
 
@@ -234,13 +237,13 @@ nav ul li {
 
 #work {
 	width: 100%;
-	background-image: linear-gradient(to bottom,#4A8FE2,#366CAB);
-	color: white;
+	background-image: url('../images/dash-bg.png');
+	color: #4A90E2;
 }
 
 #work a {
-	color: white;
-	border-color: white;
+	color: #4A90E2;
+	border-color: #4A90E2;
 }
 
 .portfolio-piece .close {
@@ -261,11 +264,24 @@ nav ul li {
 	z-index: 10;
 	visibility: hidden;
   opacity: 0;
+	display: none;
   transition: visibility 0s, opacity 0.2s 0.5s linear;
 	width: 30%;
 	padding: 20px 10%;
 	float: right;
 	color: white;
+	text-align: center;
+}
+
+#work .portfolio-piece .content a {
+	color: white;
+	background: #5BBB7D;
+	font-weight: bolder;
+	/*border-color: white;*/
+}
+
+#work .portfolio-piece .content a:hover {
+	background: #3C9059;
 }
 
 .portfolio-piece .content .button {
@@ -275,6 +291,7 @@ nav ul li {
 
 .portfolio-piece.selected .content {
 	visibility: visible;
+	display: block;
   opacity: 1;
 }
 
@@ -327,7 +344,7 @@ nav ul li {
 	box-sizing: border-box;
 	height: 0px;
 	z-index: 1;
-	opacity: 0.7;
+	opacity: 0.9;
 	cursor: pointer;
 	float:left;
 	transition: 0s;
@@ -513,6 +530,11 @@ nav ul li {
 	background-size: 100%;
 }
 
+.polichart {
+	background: url('../images/polichart_bg.png') center center no-repeat;
+	background-size: 100%;
+}
+
 .hacker-coffee {
 	background: url('../images/hacker_coffee_bg.png') center center no-repeat;
 	background-size: 100%;
@@ -551,6 +573,10 @@ section.color-block {
 	padding-bottom: 0;
 }
 
+section.color-block p {
+	text-align: center;
+}
+
 .resume-image {
 	display: block;
 	position: relative;
@@ -567,7 +593,7 @@ section.color-block {
 }
 
 .resume-image:hover {
-	height: 350px;
+	/*height: 350px;*/
 	opacity: 1;
 }
 
@@ -629,6 +655,10 @@ footer {
 		width: 96%;
 		margin: 5% 0;
 	}*/
+
+	.cta {
+		display: none;
+	}
 
 	.portfolio-piece .content {
 		height: auto;
